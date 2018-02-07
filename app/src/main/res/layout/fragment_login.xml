@@ -1,0 +1,96 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="@color/bg_screen2"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.utkarshgoel.cma.Login">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="LOGIN"
+        android:typeface="serif"
+        android:id="@+id/heading"
+        android:layout_marginTop="100dp"
+        android:textSize="40dp"
+        android:layout_gravity="center"
+        android:textColor="#FFFFFF"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:id="@+id/username"
+        android:drawableLeft="@mipmap/account"
+        android:hint="Username"
+        android:layout_marginTop="50dp"
+        android:textColor="#FFF"
+        android:paddingLeft="0dp"
+        android:drawablePadding="5dp"
+        android:textColorHint="#FAFAFA"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:id="@+id/password"
+            android:drawableLeft="@mipmap/lock"
+            android:hint="Password"
+            android:layout_marginTop="10dp"
+            android:textColor="#FFF"
+            android:paddingLeft="0dp"
+            android:drawablePadding="7dp"
+            android:textColorHint="#FAFAFA"/>
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:src="@drawable/eye"
+            android:id="@+id/showpassword"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="18dp" />
+
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Sign In"
+        android:id="@+id/signin"
+        android:layout_gravity="center_horizontal"
+        android:onClick="checkLogin"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Forgot password?"
+        android:id="@+id/textView3"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:textColor="#FAFAFA"/>
+
+</LinearLayout>
+
+</ScrollView>

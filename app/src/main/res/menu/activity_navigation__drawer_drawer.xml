@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/profile"
+            android:icon="@mipmap/account"
+            android:title="Profile" />
+        <item
+            android:id="@+id/new_complaint"
+            android:icon="@mipmap/newfile"
+            android:title="New Comlpaint" />
+        <item
+            android:id="@+id/status"
+            android:icon="@mipmap/status"
+            android:title="Status" />
+        <item
+            android:id="@+id/history"
+            android:icon="@mipmap/history"
+            android:title="History" />
+        <item
+            android:id="@+id/pswrd"
+            android:icon="@mipmap/lock"
+            android:title="Change Password" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Log Out" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Exit" />
+        </menu>
+    </item>
+
+</menu>
